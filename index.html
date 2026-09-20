@@ -1,11 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vue.js - The Progressive JavaScript Framework</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    
+
+  <!-- Navigation Bar -->
+  <header>
+    <div class="nav-container">
+      <a href="https://vuejs.org/" class="logo">
+        <img src="https://vuejs.org/images/logo.png" alt="Vue Logo" />
+        <span>Vue.js</span>
+      </a>
+
+      <button class="search-btn">
+        <span>Search</span>
+        <kbd>Ctrl K</kbd>
+      </button>
+
+      <ul class="nav-links">
+        <li><a href="https://vuejs.org/guide/introduction.html">Docs</a></li>
+        <li><a href="https://play.vuejs.org/">Playground</a></li>
+        <li><a href="https://vuejs.org/ecosystem/">Ecosystem</a></li>
+        <li><a href="https://vuejs.org/about/team.html">About</a></li>
+        <li><a href="https://vuejs.org/sponsor/">Support</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <main>
+    <section class="hero">
+      <img class="hero-logo" src="https://vuejs.org/images/logo.png" alt="Vue.js Logo" />
+      <h1>The Progressive JavaScript Framework</h1>
+      <p>An approachable, performant and versatile framework for building web user interfaces.</p>
+      
+      <div class="hero-buttons">
+        <a href="https://vuejs.org/guide/introduction.html" class="btn btn-primary">Why Vue</a>
+        <a href="https://vuejs.org/guide/quick-start.html" class="btn btn-secondary">Get Started</a>
+        <a href="https://vuejs.org/guide/quick-start.html" class="btn btn-secondary">Install</a>
+      </div>
+
+      <div class="sponsor-banner">
+        <a href="https://vuejs.org/sponsor/">Special Sponsor slot is now vacant - Inquire now</a>
+      </div>
+    </section>
+
+    <!-- Key Features Section -->
+    <section class="features">
+      <div class="feature-card">
+        <h2><span>V</span>ersatile</h2>
+        <p>A rich, incrementally adoptable ecosystem that scales between a library and a full-featured framework.</p>
+      </div>
+      <div class="feature-card">
+        <h2><span>U</span>ser-friendly</h2>
+        <p>Builds on top of standard HTML, CSS and JavaScript with intuitive API and world-class documentation.</p>
+      </div>
+      <div class="feature-card">
+        <h2><span>E</span>fficient</h2>
+        <p>Truly reactive, compiler-optimized rendering system that rarely requires manual optimization.</p>
+      </div>
+    </section>
+
+    <!-- Sponsors Section -->
+    <section class="sponsors">
+      <h2>Platinum Sponsors</h2>
+      <div class="sponsor-grid">
+        <a href="https://www.vuemastery.com/" class="sponsor-box">
+          <img src="https://sponsors.vuejs.org/images/vuemastery.png" alt="VueMastery" />
+        </a>
+        <a href="https://vehikl.com/" class="sponsor-box">
+          <img src="https://sponsors.vuejs.org/images/vehikl.png" alt="Vehikl" />
+        </a>
+        <a href="https://www.storyblok.com/" class="sponsor-box">
+          <img src="https://sponsors.vuejs.org/images/storyblok.png" alt="Storyblok" />
+        </a>
+        <a href="https://coderabbit.ai/" class="sponsor-box">
+          <img src="https://sponsors.vuejs.org/images/coderabbit_ai.png" alt="CodeRabbit" />
+        </a>
+        <a href="https://imagekit.io/" class="sponsor-box">
+          <img src="https://sponsors.vuejs.org/images/imagekit_io.png" alt="ImageKit" />
+        </a>
+        <a href="https://greptile.com/" class="sponsor-box">
+          <img src="https://sponsors.vuejs.org/images/greptile.png" alt="Greptile" />
+        </a>
+        <a href="https://serpapi.com/" class="sponsor-box">
+          <img src="https://sponsors.vuejs.org/images/serpapi.png" alt="SerpApi" />
+        </a>
+        <a href="https://vuejs.org/sponsor/" class="sponsor-box become-sponsor-box">
+          Become a Sponsor
+        </a>
+      </div>
+
+      <h2>Gold Sponsors</h2>
+      <div class="sponsor-grid">
+        <a href="https://tidelift.com/" class="sponsor-box">
+          <img src="https://sponsors.vuejs.org/images/tidelift.png" alt="Tidelift" />
+        </a>
+        <a href="https://laravel.com/" class="sponsor-box">
+          <img src="https://sponsors.vuejs.org/images/laravel.png" alt="Laravel" />
+        </a>
+        <a href="https://www.fenetre.nl/" class="sponsor-box">
+          <img src="https://sponsors.vuejs.org/images/fenetre_online_solutions.png" alt="Fenêtre" />
+        </a>
+        <a href="https://usefathom.com/" class="sponsor-box">
+          <img src="https://sponsors.vuejs.org/images/fathom_analytics.png" alt="Fathom Analytics" />
+        </a>
+        <a href="https://sentry.io/" class="sponsor-box">
+          <img src="https://sponsors.vuejs.org/images/sentry.png" alt="Sentry" />
+        </a>
+        <a href="https://www.certible.com/" class="sponsor-box">
+          <img src="https://sponsors.vuejs.org/images/certible.png" alt="Certible" />
+        </a>
+        <a href="https://vuejs.org/sponsor/" class="sponsor-box become-sponsor-box">
+          Become a Sponsor
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-col">
+        <h3>Docs</h3>
+        <ul>
+          <li><a href="https://vuejs.org/guide/quick-start.html">Quick Start</a></li>
+          <li><a href="https://vuejs.org/guide/introduction.html">Guide</a></li>
+          <li><a href="https://vuejs.org/tutorial/">Tutorial</a></li>
+          <li><a href="https://vuejs.org/examples/">Examples</a></li>
+          <li><a href="https://vuejs.org/api/">API Reference</a></li>
+          <li><a href="https://vuejs.org/glossary/">Glossary</a></li>
+          <li><a href="https://vuejs.org/error-reference/">Error Reference</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3>About</h3>
+        <ul>
+          <li><a href="https://vuejs.org/about/faq.html">FAQ</a></li>
+          <li><a href="https://vuejs.org/about/team.html">Team</a></li>
+          <li><a href="https://vuejs.org/about/releases.html">Releases</a></li>
+          <li><a href="https://vuejs.org/about/community-guide.html">Community Guide</a></li>
+          <li><a href="https://vuejs.org/about/coc.html">Code of Conduct</a></li>
+          <li><a href="https://vuejs.org/about/privacy.html">Privacy Policy</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3>Resources</h3>
+        <ul>
+          <li><a href="https://vuejs.org/ecosystem/#themes">Themes</a></li>
+          <li><a href="https://vuejs.org/ecosystem/#ui-components">UI Components</a></li>
+          <li><a href="https://vuejs.org/ecosystem/#plugins">Plugins Collection</a></li>
+          <li><a href="https://certificates.dev/vuejs">Certification</a></li>
+          <li><a href="https://vuejobs.com/">Jobs</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3>Official Libraries</h3>
+        <ul>
+          <li><a href="https://router.vuejs.org/">Vue Router</a></li>
+          <li><a href="https://pinia.vuejs.org/">Pinia</a></li>
+          <li><a href="https://vuejs.org/guide/scaling-up/tooling.html">Tooling Guide</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3>Help</h3>
+        <ul>
+          <li><a href="https://chat.vuejs.org/">Discord Chat</a></li>
+          <li><a href="https://github.com/vuejs/core/discussions">GitHub Discussions</a></li>
+          <li><a href="https://dev.to/t/vue">DEV Community</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="copyright">
+      Released under the <a href="https://opensource.org/licenses/MIT">MIT License</a>. Copyright © 2014-2026 Evan You
+    </div>
+  </footer>
+
 </body>
 </html>
