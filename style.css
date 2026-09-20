@@ -271,6 +271,95 @@ header {
   border-style: solid;
 }
 
+/* --- SPONSORS SECTION --- */
+
+.sponsors {
+  max-width: 1150px;
+  margin: 4rem auto;
+  padding: 0 1.5rem;
+  text-align: center;
+}
+
+.sponsors h2 {
+  font-size: 1.2rem;
+  color: var(--text-dim);
+  margin: 2.5rem 0 1.5rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+/* Auto-fitting Grid Layout */
+.sponsor-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2.5rem;
+}
+
+/* Individual Sponsor Card */
+.sponsor-box {
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.2rem;
+  transition: border-color 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease, background-color 0.25s ease;
+  cursor: pointer;
+}
+
+/* Card Hover Animation */
+.sponsor-box:hover {
+  border-color: var(--vue-green);
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 4px 20px rgba(66, 184, 131, 0.15);
+  background-color: #26272f;
+}
+
+/* Logo Image Properties */
+.sponsor-box img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  filter: grayscale(100%) opacity(0.65);
+  transition: filter 0.25s ease, transform 0.25s ease;
+}
+
+/* Logo Hover Reveal */
+.sponsor-box:hover img {
+  filter: grayscale(0%) opacity(1);
+  transform: scale(1.04);
+}
+
+/* "Become a Sponsor" Action Card */
+.sponsor-box.become-sponsor-box {
+  color: var(--text-dim);
+  font-size: 0.85rem;
+  font-weight: 500;
+  border-style: dashed;
+}
+
+.sponsor-box.become-sponsor-box:hover {
+  color: var(--vue-green);
+  border-color: var(--vue-green);
+  border-style: solid;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 640px) {
+  .sponsor-grid {
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 0.75rem;
+  }
+  
+  .sponsor-box {
+    height: 75px;
+    padding: 0.8rem;
+  }
+}
+
 /* Footer */
 footer {
   border-top: 1px solid var(--border-color);
